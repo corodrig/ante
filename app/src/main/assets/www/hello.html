@@ -1,24 +1,45 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no;" />
-    <title>FQF 2012 Transportation</title>
-    <link 	rel="stylesheet"
-             type="text/css"
-             href="iphone.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pure Drawer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="css/pure-drawer.css"/>
 </head>
-
 <body>
-<div class="header"><h1> Adopt an Artist</h1></div>
-<div class="padding">
-    <h4>Contact French Quarter Festival to hear more about Musician Sponsorship!</h4>
+<div class="pure-container" data-effect="pure-effect-slide">
+    <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left"/>
+    <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right"/>
+    <input type="checkbox" id="pure-toggle-top" class="pure-toggle" data-toggle="top"/>
 
-    <p><a href="tel:5045225730" id="button">(504) 522-5730</a></p>
-    <p><a href="tel:8006735725" id="button">(800) 673-5725</a></p>
-    <p><a href="http://www.fqfi.org/frenchquarterfest/fqfi_adopt_artist.html" id="button">Additional Info</a></p>
+    <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left"><span class="pure-toggle-icon"></span></label>
+    <label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right"><span class="pure-toggle-icon"></span></label>
+    <label class="pure-toggle-label" for="pure-toggle-top" data-toggle-label="top"><span class="pure-toggle-icon"></span></label>
 
-    <p><img src="html-images/adopt.png" /></p>
+    <nav class="pure-drawer" data-position="left">
+        <p style="padding: 100px 20px; margin: 0;">Insert your off-canvas content for the left drawer here</p>
+    </nav>
+
+    <nav class="pure-drawer" data-position="right">
+        <p style="padding: 100px 20px; margin: 0;">Insert your off-canvas content for the right drawer here</p>
+    </nav>
+
+    <nav class="pure-drawer" data-position="top">
+        <p style="padding: 20px 20px; margin: 0;">Insert your off-canvas content for the top drawer here</p>
+    </nav>
+
+    <div class="pure-pusher-container">
+        <div class="pure-pusher">
+            <p style="width: 300px; margin: 100px auto;">Insert your main content here</p>
+        </div>
+    </div>
+
+    <label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label>
+    <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+    <label class="pure-overlay" for="pure-toggle-top" data-overlay="top"></label>
 </div>
 </body>
+</html>
